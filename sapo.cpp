@@ -54,6 +54,7 @@ void desenharSapo() {
     // Boca do sapo
     glColor3f(0.0, 0.0, 0.0);
     glBegin(GL_QUADS);
+
     glVertex2f(-0.3, 0.0);
     glVertex2f(-0.1, 0.0);
     glVertex2f(-0.1, -0.2);
@@ -73,10 +74,30 @@ void desenharSapo() {
     // Lingua do sapo
     glColor3f(1.0, 0.0, 0.0);
     glBegin(GL_QUADS);
+    glVertex2f(-0.1, -0.1);
+    glVertex2f(0.0, -0.1);
+    glVertex2f(0.0, -0.2);
+    glVertex2f(-0.1, -0.2);
+
+    glVertex2f(0.0, -0.1);
+    glVertex2f(0.1, -0.1);
     glVertex2f(0.1, -0.2);
-    glVertex2f(0.3, -0.2);
-    glVertex2f(0.3, -0.4);
-    glVertex2f(0.1, -0.4);
+    glVertex2f(0.0, -0.2);
+
+    glEnd();
+
+    // Pés do sapo
+    glColor3f(0.0, 1.0, 0.0);
+    glBegin(GL_QUADS);
+    glVertex2f(-0.6, -0.5);
+    glVertex2f(-0.4, -0.5);
+    glVertex2f(-0.4, -0.7);
+    glVertex2f(-0.6, -0.7);
+
+    glVertex2f(0.6, -0.5);
+    glVertex2f(0.4, -0.5);
+    glVertex2f(0.4, -0.7);
+    glVertex2f(0.6, -0.7);
     glEnd();
 
     glFlush();
